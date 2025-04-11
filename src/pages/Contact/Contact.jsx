@@ -17,7 +17,7 @@ function Contact() {
                 </ul>
             </div>
 
-            <p className='text-center'>This is my personal portfolio website, fully designed and coded by me. <br /> Thank you for visiting! You can find the source code on my GitHub.</p>
+            <p className='text-center'>This is my personal portfolio website, fully designed and coded by me. <br /> Thank you for visiting! You can find the source code on <a href="https://github.com/duongphan2101/portfolio_v2.git" className='mygit'>my GitHub.</a></p>
         </div>
     );
 }
