@@ -1,0 +1,56 @@
+.header {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    padding: 20px;
+}
+
+.nav-icon {
+    font-size: 36px;
+    color: white;
+}
+
+.text-portfolio {
+    color: white;
+    font-size: 64px;
+    -webkit-text-stroke: 2px #FF7700;
+    text-transform: uppercase;
+    transition: font-size 0.3s ease;
+}
+
+.text-nav {
+    font-size: 36px;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 45px;
+    transition: all 0.3s ease;
+    -webkit-text-stroke: .5px #FF7700;
+}
+
+.text-nav:hover {
+    color: #FF7700;
+    text-shadow: 0 0 5px #FF7700, 0 0 10px #FF7700;
+}
+
+.nav {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Responsive: Dưới 992px */
+@media (max-width: 1200px) {
+    .text-portfolio {
+        font-size: 36px;
+        -webkit-text-stroke: 1.5px #FF7700;
+    }
+
+    .text-nav {
+        font-size: 20px;
+        padding: 10px 20px;
+        color: white;
+        -webkit-text-stroke: 0;
+    }
+}

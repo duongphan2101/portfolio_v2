@@ -1,0 +1,175 @@
+.solar-system {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kode Mono', monospace;
+  aspect-ratio: 1 / 1;
+}
+
+.sun {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff6f00, #ffa000);
+  box-shadow: 0 0 40px #ff6f00;
+  z-index: 10;
+}
+
+.orbit-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 5;
+  background-color: transparent;
+}
+
+/* Orbit hình tròn */
+.orbit {
+  position: absolute;
+  border: 2px solid;
+  border-radius: 50%;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+
+/* Wrapper để xoay các hành tinh */
+.planet-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  animation: rotate linear infinite;
+}
+
+/* Tạo chuyển động xoay */
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.planet {
+  position: absolute;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  pointer-events: all;
+
+
+}
+
+.planet img {
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease;
+}
+
+.planet-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.planet-icon::after {
+  content: attr(data-name);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  background: rgba(0, 0, 0, 0.8);
+  color: orange;
+  padding: 4px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  font-family: 'Kode Mono', monospace;
+  z-index: 100;
+}
+
+.planet-icon:hover::after {
+  opacity: 1;
+}
+
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: orange;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Kode Mono', monospace;
+  font-size: 16px;
+  z-index: 9999;
+  box-shadow: 0 0 10px orange;
+  animation: fadeInOut 2s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+}
+
+/* Responsive fallback nếu aspect-ratio không hỗ trợ */
+@supports not (aspect-ratio: 1 / 1) {
+  .solar-system {
+    height: 100vw;
+  }
+}
+
+/* Responsive nâng cao cho thiết bị nhỏ */
+@media (max-width: 1300px) {
+  .solar-system {
+    aspect-ratio: 1 / 1;
+    padding: 20px;
+    height: 120%;
+    width: 100%;
+  }
+
+  .planet img {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .sun {
+    width: 80px;
+    height: 80px;
+  }
+}

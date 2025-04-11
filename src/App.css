@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  /* padding: 0 30px; */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  background-color: #222;
+  color: #fff;
+  scroll-behavior: smooth;
+  z-index: 1;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
