@@ -71,8 +71,6 @@
   transition: transform 0.3s ease;
   cursor: pointer;
   pointer-events: all;
-
-
 }
 
 .planet img {
@@ -91,7 +89,7 @@
   top: 100%;
   left: 50%;
   transform: translate(-50%, 10px);
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.1);
   color: orange;
   padding: 4px 8px;
   font-size: 12px;

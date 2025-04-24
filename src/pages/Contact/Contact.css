@@ -1,11 +1,70 @@
-.li-contact {
-    padding: 0 20px;
+.contact-container {
+    background-color: #222;
+    text-align: center;
 }
 
-.bi {
-    font-size: 64px;
+.icon-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.li-contact {
+    margin: 0 15px;
+}
+
+.li-contact a {
+    color: #333;
+    font-size: 2rem;
+    transition: transform 0.2s, color 0.3s;
+}
+
+.li-contact a:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 1.1rem;
 }
 
 .mygit {
-    color: #ff6200;
+    color: #6f42c1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mygit:hover {
+    text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .li-contact {
+        margin: 10px;
+    }
+
+    .li-contact a {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-contact {
+        padding: 2rem 1rem;
+    }
+
+    .li-contact a {
+        font-size: 1.3rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
 }

@@ -55,9 +55,12 @@
   transition: transform 0.2s, filter 0.2s;
   transform-origin: center center;
 }
+
 .subnode:hover {
-  filter: drop-shadow(0 0 20px #ff6200);
+  filter: drop-shadow(0 0 2px #ff6200) drop-shadow(0 0 3px #ff6200) drop-shadow(0 0 8px #ff6200);
 }
+
+
 
 
 
