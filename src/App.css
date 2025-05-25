@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 .App {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   /* padding: 0 30px; */
 }
@@ -10,18 +10,105 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: monospace;
-  background-color: #222;
+  font-family: manrope;
+  background-color: rgb(1, 2, 3);
   color: #fff;
   scroll-behavior: smooth;
   z-index: 1;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 li {
   list-style-type: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgb(48, 49, 50);
+  z-index: 10;
+}
+
+.title-port {
+  font-weight: '800';
+}
+
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #FF7700;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.box {
+  padding: 0 150px;
+
+}
+
+.box-title {
+  padding: 15px;
+  background-color: rgb(26, 27, 28);
+  border: 1px solid rgb(48, 49, 50);
+  border-radius: 15px;
+
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.box-content {
+  padding: 15px;
+  background-color: rgb(26, 27, 28);
+  border: 1px solid rgb(48, 49, 50);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 0;
+
+  font-size: 18px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.message-box {
+  max-width: 100%;
+  position: relative;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+strong {
+  background-color: transparent;
+  color: #FF7700;
+  font-weight: 900;
+}
+
+.strong {
+  color: #fff;
+}
+
+p, em, a {
+  background-color: transparent;
 }
