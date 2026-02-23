@@ -4,7 +4,7 @@ import { Modal, Button } from 'react-bootstrap';
 
 function SimpleModal({ show, onClose, title, link }) {
   return (
-    <Modal show={show} onHide={onClose} centered>
+    <Modal show={show} onHide={onClose} centered size="xl">
       <Modal.Header closeButton className='bg-dark text-white'>
         <Modal.Title style={{ backgroundColor: 'transparent' }}>
           {title}

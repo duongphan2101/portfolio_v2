@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="App container-fluid">
+    <div>
       <header className="container py-3 px-3 px-lg-5">
         <div className="row align-items-center">
           <div className="col-6 col-lg-2">
@@ -84,13 +84,15 @@ function App() {
               <div className="box-content">
                 Hi!{" "}
                 <strong>
-                  I'm Dương, a final-year Software Engineering student
+                  I'm Dương, a Software Engineering student who has completed
+                  all coursework and is currently awaiting graduation.
                 </strong>{" "}
-                with a passion for full stack development. I enjoy learning new
-                things and turning ideas into practical, meaningful projects.
+                I build web applications from frontend to backend, focusing on
+                clean structure, maintainable code, and practical solutions to
+                real-world problems.
               </div>
               <div className="subtitle my-3">
-                IUH - <span>Software Engineering</span> - 8/2021 - 12/2025
+                IUH - <span>Software Engineering</span> - 2021 - 2026
               </div>
             </div>
           </div>
@@ -109,22 +111,32 @@ function App() {
               <div className="box-title mb-2">Skills</div>
 
               <div className="box-content">
-                I have experience across the full stack, with a strong focus on
-                backend development. I’ve worked with backend technologies like{" "}
-                <strong>Java (Spring Boot)</strong> and <strong>Node.js</strong>
-                , and built interfaces using <strong>ReactJS</strong> and{" "}
-                <strong>React Native</strong>. I'm comfortable working with both
-                relational (<strong>MSSQL</strong>) and NoSQL (
-                <strong>MongoDB</strong>) databases. I also have hands-on
-                experience with cloud services (<strong>AWS</strong>),
-                containerization using <strong>Docker</strong>, and development
-                on <strong>Ubuntu</strong>. Additionally, I use{" "}
-                <strong>Git</strong> for version control and{" "}
-                <strong>Figma</strong> for UI design collaboration.
+                I work across both frontend and backend, and I enjoy
+                understanding how the whole system connects together. On the
+                backend side, I’ve worked with{" "}
+                <strong>Java (Spring Boot)</strong>,<strong> Node.js</strong>,
+                and <strong>C# (.NET, WinForms)</strong> to build RESTful APIs,
+                authentication flows (JWT), and internal desktop applications.
+                I’m familiar with basic microservice architecture, inter-service
+                communication, and handling real-time features using{" "}
+                <strong>Socket.IO</strong> and <strong>Redis</strong>. For
+                frontend development, I’ve built web and mobile interfaces using
+                <strong> ReactJS</strong> and <strong>React Native</strong>,
+                integrating APIs and implementing responsive UI based on design
+                files. I’ve worked with both relational databases like{" "}
+                <strong>MSSQL</strong> and NoSQL databases like{" "}
+                <strong>MongoDB</strong>, including database design and query
+                optimization. I also have hands-on experience with{" "}
+                <strong>Docker</strong> for containerization, basic cloud
+                services on <strong>AWS</strong> (S3, DynamoDB), development on
+                <strong> Ubuntu</strong>, and version control using{" "}
+                <strong>GitHub</strong>. For collaboration and UI handoff, I use{" "}
+                <strong>Figma</strong> and tools like <strong>Postman</strong>{" "}
+                for API testing.
               </div>
 
               <div className="subtitle my-3">
-                IUH - <span>Software Engineering</span> - 8/2021 - 12/2025
+                IUH - <span>Software Engineering</span> - 2021 - 2026
               </div>
             </div>
           </div>
@@ -141,8 +153,47 @@ function App() {
             {/* Bong bóng message */}
             <div className="message-box">
               <div className="box-title mb-2">Projects</div>
-
               <div className="box-content">
+                <p>
+                  <strong>
+                    SmartHire – Recruitment Platform (Graduation Project)
+                  </strong>
+                  <br />
+                  <em>08/2025 – 12/2025</em>
+                  <br />
+                  Built a full-stack recruitment platform using{" "}
+                  <strong>ReactJS</strong> and <strong>TypeScript</strong> for
+                  the frontend, and a{" "}
+                  <strong>microservice-based backend</strong> with{" "}
+                  <strong>Node.js</strong>. Designed and implemented services
+                  for authentication, job management, and user profiles.
+                  Developed and consumed <strong>RESTful APIs</strong> to
+                  connect frontend and backend layers. Worked with{" "}
+                  <strong>MongoDB</strong> and applied containerization using{" "}
+                  <strong>Docker</strong>. Integrated AI-related features for CV
+                  analysis and candidate matching.
+                  <br />
+                  <strong>GitHub:</strong>{" "}
+                  <a
+                    href="https://github.com/duongphan2101/SmartHire.git"
+                    target="_blank"
+                  >
+                    SmartHire Repository
+                  </a>
+                </p>
+
+                <button
+                  className="btn btn-dark mb-3"
+                  onClick={() =>
+                    playDemo(
+                      "SmartHire",
+                      "https://drive.google.com/file/d/13V8jp26uw0SKj4ausJTsSts49Sm87XN2/preview",
+                    )
+                  }
+                >
+                  Demo
+                </button>
+
                 <p>
                   <strong>
                     VChat – Real-Time Messaging App (Group Project)
@@ -174,7 +225,7 @@ function App() {
                   onClick={() =>
                     playDemo(
                       "VChat",
-                      "https://drive.google.com/file/d/12yxYKacjS2xwElcfbRUrFSTp_lS8fMny/preview"
+                      "https://drive.google.com/file/d/12yxYKacjS2xwElcfbRUrFSTp_lS8fMny/preview",
                     )
                   }
                 >
@@ -208,7 +259,7 @@ function App() {
                   onClick={() =>
                     playDemo(
                       "HDND Store",
-                      "https://drive.google.com/file/d/19Gbqo2dNrtPmEU8Vqs6mPPRoxrBxBXaM/view?usp=drive_link"
+                      "https://drive.google.com/file/d/19Gbqo2dNrtPmEU8Vqs6mPPRoxrBxBXaM/view?usp=drive_link",
                     )
                   }
                 >
@@ -241,7 +292,7 @@ function App() {
                   onClick={() =>
                     playDemo(
                       "Video Sharing App",
-                      "https://drive.google.com/file/d/17kAmg0r3GBqFA_kl-z1T__NhXWoiZWSE/view?usp=drive_link"
+                      "https://drive.google.com/file/d/17kAmg0r3GBqFA_kl-z1T__NhXWoiZWSE/view?usp=drive_link",
                     )
                   }
                 >
@@ -250,7 +301,7 @@ function App() {
               </div>
 
               <div className="subtitle my-3">
-                IUH - <span>Software Engineering</span> - 8/2021 - 12/2025
+                IUH - <span>Software Engineering</span> - 2021 - 2026
               </div>
             </div>
           </div>
@@ -289,7 +340,7 @@ function App() {
               </div>
 
               <div className="subtitle my-3">
-                IUH - <span>Software Engineering</span> - 8/2021 - 12/2025
+                IUH - <span>Software Engineering</span> - 2021 - 2026
               </div>
             </div>
           </div>
