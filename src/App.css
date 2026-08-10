@@ -1,14 +1,12 @@
 @layer base {
-  html, body {
+  html, body, #root {
     margin: 0;
     padding: 0;
-    background-color: #0d1515;
+    background-color: #0d0f12 !important;
     color: #dce4e5;
-  }
-  body {
-    overscroll-behavior: none;
-    background-image: linear-gradient(rgba(0,219,233,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,219,233,0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.22) 1.2px, transparent 1.2px) !important;
+    background-size: 24px 24px !important;
+    background-position: 0 0 !important;
   }
 }
 
@@ -16,7 +14,7 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0d1515;
+  background: #06090b;
 }
 ::-webkit-scrollbar-thumb {
   background: #00dbe9;

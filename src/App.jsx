@@ -97,7 +97,7 @@ function App() {
   };
 
   return (
-    <div className="bg-surface text-on-surface font-body-md min-h-screen relative w-full overflow-x-hidden flex flex-col items-center">
+    <div className="bg-transparent text-on-surface font-body-md min-h-screen relative w-full overflow-x-hidden flex flex-col items-center">
       {/* Dynamic Ambient Background Glow */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute top-[10%] left-[20%] w-[600px] h-[600px] bg-primary/5 rounded-full blur-[160px] animate-pulse"></div>

@@ -10,7 +10,7 @@ export const translations = {
       status: "SYS.REQ: CONNECTION_ESTABLISHED",
       name: "Phan Nguyễn",
       nameHighlight: "Đại Dương",
-      role: "Software Engineering Specialist",
+      role: "Software Engineering",
       bio1: "Hi! I'm Dương, a Software Engineering student at IUH (2021–2026) who has completed all coursework and is currently awaiting graduation.",
       bio2: "I architect high-performance digital applications from frontend to microservice backend, focusing on clean modular structure, maintainable code, and scalable real-world solutions.",
       tag1: "SYSTEM ARCHITECTURE",
@@ -49,7 +49,7 @@ export const translations = {
       p1Sub: "AI Recruitment Platform",
       p1Date: "08/2025 – 12/2025",
       p1Desc: "Full-stack recruitment automation platform leveraging AI to streamline candidate matching, resume parsing, and interview evaluation workflows. Engineered with microservices architecture on Node.js, ReactJS, and Docker.",
-      
+
       p2Tag: "PROJECT 02 // MESSAGING",
       p2Title: "VChat App",
       p2Date: "01/2025 – 05/2025",
@@ -114,7 +114,7 @@ export const translations = {
       status: "TRẠNG THÁI: ĐÃ KẾT NỐI HỆ THỐNG",
       name: "Phan Nguyễn",
       nameHighlight: "Đại Dương",
-      role: "Kỹ sư Phần mềm - Software Specialist",
+      role: "Kỹ sư Phần mềm",
       bio1: "Xin chào! Tôi là Dương, sinh viên ngành Kỹ thuật Phần mềm tại Trường ĐH Công nghiệp TP.HCM (IUH, 2021–2026), đã hoàn thành toàn bộ chương trình học và đang chờ nhận bằng tốt nghiệp.",
       bio2: "Tôi thiết kế và xây dựng các ứng dụng số hiệu năng cao từ Frontend đến Microservices Backend, chú trọng vào cấu trúc mã sạch, dễ bảo trì và giải pháp thực tế có khả năng mở rộng tốt.",
       tag1: "KIẾN TRÚC HỆ THỐNG",
