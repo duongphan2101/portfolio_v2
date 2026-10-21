@@ -13,43 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300..900;1,300..900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- Tailwind CSS CDN & Custom Config -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            fontFamily: {
-              sofia: ['"Sofia Pro"', '"Sofia Sans"', '"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-              mono: ['"JetBrains Mono"', 'monospace']
-            },
-            colors: {
-              warm: {
-                50: '#fafafb',
-                100: '#f4f4f7',
-                200: '#eaeaef',
-                300: '#d8d8e0',
-                400: '#a3a3b2',
-                500: '#737385',
-                600: '#525263',
-                700: '#383845',
-                800: '#23232c',
-                900: '#14141a',
-                950: '#0b0b0e'
-              }
-            },
-            boxShadow: {
-              'dock': '0 20px 45px -12px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.05)',
-              'dock-dark': '0 25px 50px -12px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.08)',
-              'card': '0 1px 3px rgba(0, 0, 0, 0.04), 0 10px 24px -8px rgba(0, 0, 0, 0.04)',
-              'card-hover': '0 12px 32px -8px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.06)',
-              'card-dark': '0 10px 30px -10px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.06)'
-            }
-          }
-        }
-      };
-    </script>
+
   </head>
   <body class="font-sofia antialiased selection:bg-neutral-800 selection:text-white dark:selection:bg-neutral-200 dark:selection:text-neutral-900 transition-colors duration-300">
     <div id="root"></div>

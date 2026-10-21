@@ -12,7 +12,7 @@ import reactIcon from '../assets/React.png';
 import springIcon from '../assets/SpringBoot.png';
 import ubuntuIcon from '../assets/Ubuntu.png';
 
-export function getTechVisual(tech) {
+function getTechVisual(tech) {
   const t = (tech || '').toLowerCase().trim();
 
   // 1. Node.js
